@@ -388,7 +388,7 @@
 						</dl>
 					</div>
 					<div class="contact_right">
-						<form class="" action="common/php/mailwrite.php" method="post">
+						<form class="gform">
 							<fieldset>
 								<legend class="hid">contact 양식</legend>
 								<dl>
@@ -396,7 +396,7 @@
 									<dd><input type="text" name="name" placeholder="이름" required="required" title="이름"></dd>
 									<dd><input type="text" name="email" placeholder="연락처, E-Mail" required="required" title="연락처,E-Mail"></dd>
 									<dd><textarea name="message" rows="8" cols="80" placeholder="내용" required="required" title="내용"></textarea></dd>
-									<dd><input type="submit" value="보내기"></dd>
+									<dd><input type="button" value="보내기" id="formSubmit"></dd>
 								</dl>
 							</fieldset>
 						</form>
@@ -441,6 +441,28 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+
+		$("#formSubmit").click(function() {
+			var queryString = $(".gform").serialize();
+			console.log(queryString);
+ 
+			$.ajax({
+				type : 'post',
+				url : 'https://script.google.com/macros/s/AKfycbxtkhDxn7euwEWEONUmN5WVbQ8f41iiQRzEbonf/exec',
+				data : queryString,
+				dataType : 'json',
+				error: function(xhr, status, error){
+					//alert(error);
+				},
+				success : function(json){
+					//alert(json)
+				},
+			});
+		});
+		
+	</script>
 </body>
 
 </html>
