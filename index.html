@@ -455,9 +455,11 @@
 				dataType : 'json',
 				error: function(xhr, status, error){
 					//alert(error);
+					$(".gform")[0].reset();
 				},
 				success : function(json){
 					//alert(json)
+					$(".gform")[0].reset();
 				},
 			});
 		});
