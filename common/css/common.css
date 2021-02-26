@@ -101,8 +101,8 @@
     #portfolio .pofol_contents .thum_area{height: 187px;overflow:hidden;}
     #portfolio .pofol_contents dl{padding: 15px;height: 168px;}
     #portfolio .pofol_contents dl dt{font: bold 1.3em/1em "서울남산B";color: #384259;padding:15px 0 10px;border-top: 1px solid #d9dade;}
-    #portfolio .pofol_contents dl dt span.date{float:right;color:#7b7b7b;font-size: 0.8em;}
-    #portfolio .pofol_contents dl dd{font: 1em/1em "서울남산M";color: #7b7b7b;}
+    #portfolio .pofol_contents dl dt span.date{float:right;color:rgba(0, 0, 0, 0.6);font-size: 0.8em;}
+    #portfolio .pofol_contents dl dd{font: 1em/1em "서울남산M";/* color: #7b7b7b; */}
     #portfolio .pofol_contents dl dd>p{padding-bottom: 10px;}
     #portfolio .pofol_contents dl dd span{background-color: #eef2fc;
     border: 1px solid #506cb2;font-size: 12px;padding: 3px 10px 3px;margin-right: 3px;color:#555;font-weight: bold;}
